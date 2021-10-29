@@ -7,6 +7,9 @@
 - The solution must be pushed to the repository and be available for the tutors by the end of the day (5PM CET)
 */
 
+
+//ffffffffffffff
+
 /* EXERCISE 1
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
@@ -46,6 +49,20 @@ crazySum(8,2)
 */
 
 /* WRITE YOUR ANSWER HERE */
+
+function crazyDiff (num){
+
+         
+    let difference = Math.abs(num - 19)
+
+    if(num > 19){
+        return difference * 3;
+    }else {
+        return difference
+    } 
+}
+
+crazyDiff(25)
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
