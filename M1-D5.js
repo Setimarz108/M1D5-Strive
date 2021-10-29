@@ -20,7 +20,7 @@ function area (width, hight){
     let area = width * hight
    return area
 }
-area(12,12)
+console.log(area(12,12))
 
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.
@@ -69,6 +69,18 @@ crazyDiff(25)
 */
 
 /* WRITE YOUR ANSWER HERE */
+
+function boundary(n){
+
+       if(n >= 20 && n <= 100 || n === 400){
+         
+             return true
+       }
+       else { 
+            return false}
+}
+
+console.log(boundary(300))
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
