@@ -89,12 +89,43 @@ console.log(boundary(300))
 
 /* WRITE YOUR ANSWER HERE */
 
+function strivify(myString) {
+
+         let addStrive = 'Strive' 
+
+         if(myString === addStrive || ""){
+             return myString
+         } else if(myString != addStrive){
+             return 'Strive' + myString
+                 }
+                 else{ 
+                     return 'Please write something'
+                 }
+       }
+
+       console.log(strivify(" Strive rocks"))
+
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
 
 /* WRITE YOUR ANSWER HERE */
+
+function check3and7(num) {
+     
+    if( num % 3 === 0 || num % 7 === 0){
+        return true
+    } else {
+        return false
+    }
+    
+}
+
+console.log(check3and7(54))
+console.log(check3and7(34))
+console.log(check3and7(20))
+console.log(check3and7(17))
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
