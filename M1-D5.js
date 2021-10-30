@@ -149,17 +149,49 @@ console.log(reverseString("This is a test of this function"))
 
 /* WRITE YOUR ANSWER HERE */
 
+function upperFirst(word){
+    
+    return word.charAt (0).toUpperCase() + word.slice(1)
+}
+
+
+console.log(upperFirst("mi nombre es camilo"))
+
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
 /* WRITE YOUR ANSWER HERE */
 
+function cutString(string){
+    
+    let removeFirstLetter = string.substring(1)
+    let removeLastLetter = string.substring(0, string.length - 1)
+    let newString = removeFirstLetter + removeLastLetter
+
+    return newString
+}
+
+console.log(cutString("Esto es una prueba"))
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
 /* WRITE YOUR ANSWER HERE */
+
+function giveMeRandom(n){
+
+      let array = []
+      let generateRandomNum = Math.floor(Math.random() * 10)
+      for (let i=0 ; i<= n; i++){
+          array.push(generateRandomNum)
+      }
+      
+      return array
+           
+}
+
+console.log(giveMeRandom(9))
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
