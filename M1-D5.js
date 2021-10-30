@@ -133,6 +133,16 @@ console.log(check3and7(17))
 
 /* WRITE YOUR ANSWER HERE */
 
+function reverseString (string){
+
+            let splitString = string.split("")
+            let reverseArr = splitString.reverse()
+            let joinArr = reverseArr.join('')
+
+            return joinArr
+}
+
+console.log(reverseString("This is a test of this function"))
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
